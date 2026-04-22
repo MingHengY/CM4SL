@@ -1,3 +1,5 @@
+![CM4SL framework](framework.png)
+
 # Columbina Model for Synthetic Lethality (CM4SL)
 
 CM4SL 是一个基于图神经网络和多模态 Transformer 的合成致死（Synthetic Lethality, SL）预测模型，支持直推式（Transductive）和归纳式（Inductive）学习，可评估模型在未知基因对或未知基因上的泛化能力。
