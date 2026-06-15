@@ -101,7 +101,7 @@ preprocessing_info.json	标准化器与 PCA 参数
 
 1. ID 锚定模式：系统默认使用 ENTREZID 作为基因唯一标识，需提供从基因Symbol到基因ENTREZID的映射文件，此文件应至少包含 ENTREZID 和 SYMBOL 列。本项目默认使用input_data/ 目录下的human_gene_mapping.csv文件基因 ID 映射表
 
-2. 硬件要求：直推式（C1）需要较大显存（建议 24GB），归纳式（C2/C3）需要约 8GB。本项目使用一张 NVIDIA GeForce RTX 4090 显卡进行训练。
+2. 硬件要求：直推式（C1）需要较大显存（建议大于 32GB），归纳式（C2/C3）需要至少 8GB。本项目使用一张 NVIDIA A100 显卡进行训练。
 
 3. 随机种子：设置 RANDOM_SEED 可保证实验可重复性。
 
@@ -211,7 +211,7 @@ In cross‑validation mode, a *_cv/ folder is created with detailed reports and 
 
 1. ID anchoring: The system uses ENTREZID as the primary gene identifier. A mapping file from gene symbols to ENTREZID must be provided. By default, the file input_data/human_gene_mapping.csv is used, which must contain at least the ENTREZID and SYMBOL columns.
 
-2. Hardware requirements: The transductive scenario (C1) requires substantial GPU memory (24GB recommended), while inductive scenarios (C2/C3) require about 8GB. The project was trained on an NVIDIA GeForce RTX 4090.
+2. Hardware requirements: The transductive scenario (C1) requires substantial GPU memory (at least 32GB), while inductive scenarios (C2/C3) require at least 8GB. The project was trained on an NVIDIA A100.
 
 3. Reproducibility: Set RANDOM_SEED to ensure reproducible experiments.
 
